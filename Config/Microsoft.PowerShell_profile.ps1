@@ -23,6 +23,7 @@ $env:VIRTUAL_ENV_DISABLE_PROMPT = 1
 $ScriptDirectory = Split-Path -Path $MyInvocation.MyCommand.Definition -Parent
 try {
     . ("$ScriptDirectory\powershell_alias.ps1")
+    . ("$ScriptDirectory\themes\dracula.ps1")
 }
 catch {
     Write-Host "Error while loading supporting PowerShell Scripts" 
